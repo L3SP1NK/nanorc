@@ -1,2 +1,2 @@
 # nanorc
-Syntax highlighting for nano
+Customized syntax highlighting for nano
