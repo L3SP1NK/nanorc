@@ -52,9 +52,6 @@ color ,red "[[:space:]]+$"
 ### array
 color brightmagenta "^[[:alnum:]]++\=\(\\[[:alnum:]]++\)"
 
-## Function declarations.
-icolor brightgreen "^[[:alnum:]]+\(\)"
-
 ## Strings.
 color brightyellow ""([^"\]|\\.)*"|'([^'\]|\\.)*'"
 color brightyellow ""(\\.|[^"])*"" "'(\\.|[^'])*'"
@@ -85,4 +82,6 @@ color red "="
 
 ## Shebang
 color bold,cyan "^#!.*/((env[[:blank:]]+)?((a|ba|c|da|k|mk|pdk|tc|z)?sh)|busybox[[:blank:]]+sh|openrc-run|runscript)\>"
+## Function declarations.
+icolor italic,brightgreen "^[[:alnum:]]+\(\)"
 
